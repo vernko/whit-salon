@@ -10,10 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171228215008) do
+ActiveRecord::Schema.define(version: 20180102212528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "blogs", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "portfolios", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.text "body"
+    t.text "main_image"
+    t.text "thumb_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "recents", force: :cascade do |t|
     t.string "Cuts"
@@ -42,6 +59,15 @@ ActiveRecord::Schema.define(version: 20171228215008) do
     t.text "body"
     t.text "main_image"
     t.text "thumb_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "transformations", force: :cascade do |t|
+    t.string "title"
+    t.text "body"
+    t.text "before_image"
+    t.text "after_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

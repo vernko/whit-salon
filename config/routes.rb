@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :recents
-  resources :testimonials
-  resources :services
+  resources :transformations
+  resources :portfolios
+  resources :blogs
   get 'pages/home'
 
   get 'pages/about'

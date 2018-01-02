@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# TO-DO
+* Navbar (Home, Before/After, Services, Blogs, Portfolio, About, Contact, Register)
+* Home Page
+    * Business Card
+    * Schedule
+    * Before After
+    * Social Media
+    * Services
+* Footer with social media links (facebook, insta, snap, Youtube) & Google Reviews
+* Services
+* Before/After
+* Blogs
+* Portfolio
+* About and Contact Page
+* Create a Request an Appointment button that will link to booking service
+* Create a Write a Review
 
-Things you may want to cover:
+# Completed
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Potential ideas
+* User login
+* Whitney admin page
