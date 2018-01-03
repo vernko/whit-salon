@@ -1,0 +1,29 @@
+<h1>Create a new Before and After</h1>
+
+<%= form_for(@transformations) do |f| %>
+  <% if @transformations.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(transformations.errors.count, "error") %> prohibited this blog from being saved:</h2>
+
+      <ul>
+      <% transformations.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

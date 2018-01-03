@@ -27,7 +27,7 @@ puts "10 blog posts created"
     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate 
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     ",
-        main_image:  "http://placehold.it/600x400", 
+        main_image:  "http://placehold.it/600x400",
         thumb_image: "http://placehold.it/350x150",
     )
 end
@@ -43,7 +43,7 @@ end
     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate 
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     ",
-        main_image:  "http://placehold.it/600x400", 
+        main_image:  "http://placehold.it/600x400",
         thumb_image: "http://placehold.it/350x150",
     )
 end
@@ -59,7 +59,7 @@ end
     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate 
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     ",
-        main_image:  "http://placehold.it/600x400", 
+        main_image:  "http://placehold.it/600x400",
         thumb_image: "http://placehold.it/350x150",
     )
 end
@@ -78,7 +78,7 @@ puts "9 services created"
     corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate 
     velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
     ",
-        main_image:  "http://placehold.it/600x400", 
+        main_image:  "http://placehold.it/600x400",
         thumb_image: "http://placehold.it/350x150",
     )
 end
@@ -88,8 +88,8 @@ puts "9 portfolio items created"
 9.times do |transformation|
     Transformation.create!(
         title: "Transformation: #{transformation}",
-        before_image:  "http://placehold.it/600x400", 
-        after_image: "http://placehold.it/350x150"
+        before_image:  "http://placehold.it/300x200",
+        after_image: "http://placehold.it/300x200"
     )
 end
 
