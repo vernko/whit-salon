@@ -20,8 +20,8 @@ puts "10 blog posts created"
     Service.create!(
         title: "Barbered Cuts",
         body: "This service takes [time] and starts at [price].",
-        main_image:  "http://placehold.it/600x400",
-        thumb_image: "http://placehold.it/300x200",
+        main_image:  "http://placehold.it/450x400",
+        thumb_image: "http://placehold.it/250x200",
     )
 end
 
@@ -29,8 +29,8 @@ end
     Service.create!(
         title: "Length Cuts",
         body: "This service takes [time] and starts at [price].",
-        main_image:  "http://placehold.it/600x400",
-        thumb_image: "http://placehold.it/300x200",
+        main_image:  "http://placehold.it/450x400",
+        thumb_image: "http://placehold.it/250x200",
     )
 end
 
@@ -38,20 +38,30 @@ end
     Service.create!(
         title: "Children Cuts",
         body: "This service takes [time] and starts at [price].",
-        main_image:  "http://placehold.it/600x400",
-        thumb_image: "http://placehold.it/300x200",
+        main_image:  "http://placehold.it/450x400",
+        thumb_image: "http://placehold.it/250x200",
     )
 end
 
 puts "9 services created"
 
-9.times do |portfolio_item|
+1.times do |portfolio_item|
     Portfolio.create!(
-        title: "Colored",
+        title: "Portfolio Title: #{portfolio_item}",
         subtitle: "Azure",
         body: "This portfolio showcases [technique] for this type of [cut]",
-        main_image:  "http://placehold.it/600x400",
-        thumb_image: "http://placehold.it/300x150",
+        main_image:  "http://placehold.it/450x400",
+        thumb_image: "http://placehold.it/250x200",
+    )
+end
+
+8.times do |portfolio_item|
+    Portfolio.create!(
+        title: "Portfolio Title: #{portfolio_item}",
+        subtitle: "Blonde",
+        body: "This portfolio showcases [technique] for this type of [cut]",
+        main_image:  "http://placehold.it/450x400",
+        thumb_image: "http://placehold.it/250x200",
     )
 end
 
@@ -59,7 +69,7 @@ puts "9 portfolio items created"
 
 9.times do |transformation|
     Transformation.create!(
-        title: "Transformation: #{transformation}",
+        title: "Before and After",
         before_image:  "http://placehold.it/250x200",
         after_image: "http://placehold.it/250x200"
     )
