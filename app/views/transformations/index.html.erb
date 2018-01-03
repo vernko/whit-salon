@@ -1,0 +1,8 @@
+<h1>Transformations</h1>
+
+<% @transformation.each do |transformation| %>
+	<p><%= transformations.title %></p>
+	<p><%= transformations.body %></p>
+	<p><%= image_tag transformations.before_image %></p>
+	<p><%= image_tag transformations.after_image %></p>
+<% end %>

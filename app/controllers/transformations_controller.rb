@@ -1,6 +1,6 @@
 class TransformationsController < ApplicationController
     def index
-        @transformation =  Transformation.all
+        @transformations =  Transformation.all
     end
 
     def show
