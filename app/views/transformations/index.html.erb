@@ -3,7 +3,7 @@
 <%= link_to 'Add a New Transformation', new_transformation_path %>
 
 <% @transformations.each do |transformation| %>
-	<p><%= transformation.title %></p>
+	<p><%= link_to transformation.title, transformation_show_path(transformation) %></p>
 	<p><%= transformation.body %></p>
 	<%= image_tag transformation.before_image if !transformation.before_image.nil? %>
 	<%= image_tag transformation.after_image if !transformation.after_image.nil? %>
