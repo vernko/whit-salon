@@ -13,6 +13,7 @@ class ServicesController < ApplicationController
     end
 
     def edit
+        @service = Service.find(params[:id])
     end
 
     def create
@@ -28,9 +29,20 @@ class ServicesController < ApplicationController
     end
 
     def update
+        respond_to do |format|
+        if @services.update(service_params)
+          format.html { redirect_to services_path, notice: 'Service was successfully updated'}
+        else
+          format.html { render:edit }
+        end
+      end
     end
 
     def destroy
+      @service.destroy
+      respond_to do |format|
+        format.html { redirect_to services_url, notice: 'Service was successfully deleted'}
+      end
     end
 
 private

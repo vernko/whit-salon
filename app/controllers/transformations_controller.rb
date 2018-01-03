@@ -12,6 +12,7 @@ class TransformationsController < ApplicationController
     end
 
     def edit
+        @transformations = Transformation.find(params[:id])
     end
 
     def create
@@ -27,9 +28,20 @@ class TransformationsController < ApplicationController
     end
 
     def update
+        respond_to do |format|
+        if @transformations.update(transformation_params)
+          format.html { redirect_to transformations_path, notice: 'Blog was successfully updated'}
+        else
+          format.html { render:edit }
+        end
+      end
     end
 
     def destroy
+      @transformations.destroy
+      respond_to do |format|
+        format.html { redirect_to transformations_url, notice: 'Blog was successfully deleted'}
+      end
     end
 
 private

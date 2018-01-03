@@ -1,7 +1,12 @@
 <h1>Services</h1>
 
+<%= link_to 'Add a New Service', new_service_path %>
+
 <% @services.each do |service| %>
   <p><%= service.title %></p>
   <p><%= service.body %></p>
   <%= image_tag service.thumb_image if !service.thumb_image.nil? %>
+  <%= link_to 'Show', service %>
+	<%= link_to 'Edit', edit_service_path(service) %>
+	<%= link_to 'Delete Post', service, method: :delete, data: { confirm: 'Are you sure?'} %>
 <% end %>
