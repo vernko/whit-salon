@@ -18,7 +18,7 @@ puts "10 blog posts created"
 
 3.times do |service|
     Service.create!(
-        title: "Barbered Cuts",
+        title: "Barbered Cuts #{service}",
         body: "This service takes [time] and starts at [price].",
         main_image:  "http://placehold.it/450x400",
         thumb_image: "http://placehold.it/250x200",
@@ -27,7 +27,7 @@ end
 
 3.times do |service|
     Service.create!(
-        title: "Length Cuts",
+        title: "Length Cuts #{service}",
         body: "This service takes [time] and starts at [price].",
         main_image:  "http://placehold.it/450x400",
         thumb_image: "http://placehold.it/250x200",
@@ -36,7 +36,7 @@ end
 
 3.times do |service|
     Service.create!(
-        title: "Children Cuts",
+        title: "Children Cuts #{service}",
         body: "This service takes [time] and starts at [price].",
         main_image:  "http://placehold.it/450x400",
         thumb_image: "http://placehold.it/250x200",
@@ -69,7 +69,7 @@ puts "9 portfolio items created"
 
 9.times do |transformation|
     Transformation.create!(
-        title: "Before and After",
+        title: "Before and After #{transformation}",
         before_image:  "http://placehold.it/250x200",
         after_image: "http://placehold.it/250x200"
     )

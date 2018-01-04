@@ -33,7 +33,7 @@ class ServicesController < ApplicationController
         if @services.update(service_params)
           format.html { redirect_to services_path, notice: 'Service was successfully updated'}
         else
-          format.html { render:edit }
+          format.html { render :edit }
         end
       end
     end

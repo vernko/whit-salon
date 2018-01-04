@@ -1,7 +1,5 @@
 <h1>Services</h1>
 
-<%= link_to 'Add a New Service', new_service_path %>
-
 <% @services.each do |service| %>
   <p><%= link_to service.title, service_show_path(service) %></p>
   <p><%= service.body %></p>
@@ -10,3 +8,5 @@
 	<%= link_to 'Edit', edit_service_path(service) %>
 	<%= link_to 'Delete Service', service, method: :delete, data: { confirm: 'Are you sure?'} %>
 <% end %>
+
+<p><%= link_to 'Add a New Service', new_service_path %></p>

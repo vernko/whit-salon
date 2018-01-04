@@ -1,7 +1,5 @@
 <h1>Transformations</h1>
 
-<%= link_to 'Add a New Transformation', new_transformation_path %>
-
 <% @transformations.each do |transformation| %>
 	<p><%= link_to transformation.title, transformation_show_path(transformation) %></p>
 	<p><%= transformation.body %></p>
@@ -11,3 +9,6 @@
 	<%= link_to 'Edit', edit_transformation_path(transformation) %>
 	<%= link_to 'Delete Transformation', transformation, method: :delete, data: { confirm: 'Are you sure?'} %>
 <% end %>
+
+<p><%= link_to 'Add a New Transformation', new_transformation_path %></p>
+

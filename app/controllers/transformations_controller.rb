@@ -32,7 +32,7 @@ class TransformationsController < ApplicationController
         if @transformations.update(transformation_params)
           format.html { redirect_to transformations_path, notice: 'Blog was successfully updated'}
         else
-          format.html { render:edit }
+          format.html { render :edit }
         end
       end
     end
