@@ -5,7 +5,7 @@
 	<p><%= transformation.body %></p>
 	<%= image_tag transformation.before_image if !transformation.before_image.nil? %>
 	<%= image_tag transformation.after_image if !transformation.after_image.nil? %>
-	<%= link_to 'Show', transformation %>
+	<%= link_to 'Show', transformation_show_path(transformation) %>
 	<%= link_to 'Edit', edit_transformation_path(transformation) %>
 	<%= link_to 'Delete Transformation', transformation, method: :delete, data: { confirm: 'Are you sure?'} %>
 <% end %>
