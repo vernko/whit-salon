@@ -1,5 +1,5 @@
 module ApplicationHelper
-      def nav_items
+  def nav_items
     [
       {
         url: root_path,
