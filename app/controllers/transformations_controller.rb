@@ -53,8 +53,8 @@ private
     def transformation_params
         params.require(:transformation).permit(:title,
                                           :body,
-                                          :main_image,
-                                          :thumb_image,
+                                          :before_image,
+                                          :after_image,
                                           )
     end
 end
