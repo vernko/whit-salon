@@ -1,15 +1,31 @@
-// @import "bootstrap";
-// @import "font-awesome";
+@import "bootstrap";
+@import "font-awesome";
+
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .card {
   color: black;
   background-color: transparent;
   border-color: black;
-  height: 300px;
   float: left;
+  height: 300px;
   width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
-  border: 0;
   font-weight: 700;
 }
 
@@ -33,4 +49,24 @@
 .app-nav span {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.mastfoot {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.social-links a:hover {
+  padding: 0 5px 0;
+  color: #bfbfbf;
+}
+
+.appointment:hover,
+.address:hover,
+.phone:hover,
+.nav-link:hover
+ {
+  color: #bfbfbf;
 }
